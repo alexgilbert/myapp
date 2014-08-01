@@ -5,10 +5,12 @@
 
 <p>
    <strong>Password:</strong>
-   <%= "*" * @user.password.to_s.length %>
+   <%= @user.password %>
 </p>
 
 <p>
    <strong>Password Confirmation:</strong>
-   <%= "*" * @user.password_confirm.to_s.length %>
+   <%= @user.password_confirm %>
 </p>
+
+<%= link_to 'Back', users_path %>
