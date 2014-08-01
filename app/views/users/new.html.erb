@@ -1,1 +1,22 @@
 <h1>New User</h1>
+
+<%= form_for :user do |f| %>
+   <p>
+      <%= f.label :username %><br>
+      <%= f.text_field :username %>
+   </p>
+
+   <p>
+      <%= f.label :password %><br>
+      <%= f.password :password %>
+   </p>
+
+   <p>
+      <%= f.label :password_confirm %><br>
+      <%= f.password :password_confirm %>
+   </p>
+
+   <p>
+      <%= f.submit %>
+   </p>
+<% end %>
